@@ -1,0 +1,106 @@
+@font-face {font-family: "HelveticaNeueCyr-Roman";
+    font-display: swap;
+    src: url("../fonts/HelveticaNeueCyr-Roman.eot");
+    src: url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {font-family: "HelveticaNeueBold";
+    font-display: swap;
+    src: url("../fonts/HelveticaNeueCyr-Bold.eot");
+    src: url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {font-family: "HelveticaNeue45Light";
+    display: swap;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/HelveticaNeue45Light.eot");
+    src: url("../fonts/HelveticaNeue45Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HelveticaNeue45Light.woff2") format("woff2"),
+    url("../fonts/HelveticaNeue45Light.woff") format("woff"),
+    url("../fonts/HelveticaNeue45Light.ttf") format("truetype"),
+    url("../fonts/HelveticaNeue45Light.svg#HelveticaNeueLTStd-Lt") format("svg");
+}
+
+@font-face {font-family: "NimbusSanTCon-Reg";
+    display: swap;
+    src: url("../fonts/NimbusSanTCon-Reg.eot");
+    src: url("../fonts/NimbusSanTCon-Reg.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NimbusSanTCon-Reg.woff2") format("woff2"),
+    url("../fonts/NimbusSanTCon-Reg.woff") format("woff"),
+    url("../fonts/NimbusSanTCon-Reg.ttf") format("truetype"),
+    url("../fonts/NimbusSanTCon-Reg.svg#NimbusSanTCon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {font-family: "HandofSean";
+    display: swap;
+    src: url("../fonts/HandofSean.eot");
+    src: url("../fonts/HandofSean.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HandofSean.woff2") format("woff2"),
+    url("../fonts/HandofSean.woff") format("woff"),
+    url("../fonts/HandofSean.ttf") format("truetype"),
+    url("../fonts/HandofSean.svg#Hand of Sean") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: "DesertDogHmk";
+	src: url("../fonts/DesertDogHmk.ttf");
+}
+
+$font1: "HelveticaNeueCyr-Roman", sans-serif;
+$font2: "NimbusSanTCon-Reg", sans-serif;
+$font3: "HelveticaNeue45Light", sans-serif;
+$font-bold: "HelveticaNeueBold", sans-serif;
+
+$font4: "HandofSean", sans-serif;
+
+$font5: "DesertDogHmk", sans-serif;
+
+
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?65995379');
+  src: url('../fons/fontello.eot?65995379#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?65995379') format('woff2'),
+       url('../fonts/fontello.woff?65995379') format('woff'),
+       url('../fonts/fontello.ttf?65995379') format('truetype'),
+       url('../fonts/fontello.svg?65995379#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+
+.icon-play:before { content: '\e800'; } /* '' */
+.icon-google:before { content: '\e802'; } /* '' */
+.icon-left:before { content: '\e803'; } /* '' */
+.icon-right:before { content: '\e804'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-twitter:before { content: '\f309'; } /* '' */

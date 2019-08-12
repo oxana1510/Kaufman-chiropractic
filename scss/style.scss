@@ -1,0 +1,128 @@
+@import "fonts";
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+              box-sizing: border-box;
+}
+:root{
+	font-size: 10px;
+}
+body{
+	overflow-x: hidden;
+}
+.wrapper{
+	min-width: 320px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: $font1;	
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+h1, 
+h2,
+h3,
+h4{
+	font-weight: normal;
+}
+.container{
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 100%;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	@media screen and (max-width: 1055px){
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
+.bg{
+	position: relative;
+	background: url(../img/bg-top2.jpg) top right no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	@media screen and (max-width: 850px){
+		background-position: center center;
+	}
+	&:after{
+		position: absolute;
+		content: "";
+		width: 100vw;
+		height: 2000vw;
+		background: -webkit-gradient(linear, left top, left bottom, from(#023869), color-stop(5%, #1a75a5));
+		background: -o-linear-gradient(top, #023869 0%, #1a75a5 5%);
+		background: linear-gradient(to bottom, #023869 0%, #1a75a5 5%);
+	    top: -10vw;
+	    left: 23vw;
+	    -webkit-transform: rotate(-35deg);
+	        -ms-transform: rotate(-35deg);
+	            transform: rotate(-35deg);
+	    -webkit-transform-origin: 0 0;
+	        -ms-transform-origin: 0 0;
+	            transform-origin: 0 0;
+	}
+}
+
+.title{
+	font: 4rem/5rem $font3;
+	letter-spacing: 0.08rem;
+	span{
+		display: block;
+		font-family: $font-bold;
+	}
+	@media screen and (max-width: 670px){
+		font-size: 3.5rem;
+	}
+}
+p{
+	font-size: 1.7rem;
+	letter-spacing: 0.034rem;
+	line-height: 2.7rem;
+}
+.btn{
+	display: block;
+	max-width: 44.6rem;
+	padding: 1.4rem 0 1.2rem; 
+	border-radius: 2.3rem;
+	background: #1a76a5;
+	text-align: center;
+	
+	font: 2.1rem $font-bold;
+	text-shadow: 0 0 0.3rem rgba(28, 83, 158, 0.75);
+	color: #fffdf4;
+	letter-spacing: 0.051rem;
+	text-transform: uppercase;
+	@media screen and (max-width: 500px){
+		font-size: 1.8rem;
+	}
+	&:hover{
+		background: #f2b600;
+		text-shadow: none;
+	}
+}
+.font4{
+	font: 5rem $font4;
+	letter-spacing: 0.1rem;
+	@media screen and (max-width: 670px){
+		font-size: 3.5rem;
+	}
+}
+@media screen and (max-width: 500px){
+	:root{
+		font-size: 8px;
+	}
+}
+@import "header";
+@import "social-block";
+@import "main-block";
+@import "welcome";
+@import "services";
+@import "testimonials";
+@import "stars";
+@import "map";
+@import "footer";

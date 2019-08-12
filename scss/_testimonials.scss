@@ -1,0 +1,120 @@
+.testimonials{
+	background: #f2b600;
+	color: #000;
+	.container{	
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+	}
+	h2{
+		text-align: center;
+		font: 4rem $font-bold;
+		text-transform: uppercase;
+	}
+	h3{
+		text-align: center;
+		font: 3rem/4rem $font3;
+		letter-spacing: 0.06rem;
+		padding-bottom: 6.8rem;
+	}
+	.slider{
+		&__item{
+			max-width: 90%;
+			margin: auto;
+			-webkit-box-shadow: 0 0 0.4rem rgba(24, 24, 24, 0.34);
+			        box-shadow: 0 0 0.4rem rgba(24, 24, 24, 0.34);
+ 			background: #fff;
+ 			border-radius: 1.2rem;
+ 			margin-bottom: 8rem;
+ 			&:after{
+ 				position: absolute;
+ 				content: url(../img/tail.png);
+				width: 2.3rem;
+				height: 8rem;
+				left: 9rem;
+   			 	bottom: 0;
+ 			}
+ 			&-text{
+ 				position: relative;
+ 				padding: 6rem 12rem 3rem;
+ 				p{
+ 					padding-bottom: 3rem;
+ 					color: #4f4f4f;
+ 				}
+ 				span{
+ 					font: 2.3rem $font5;
+					letter-spacing: 0.046rem;
+ 				}
+ 				&:before{
+ 					position: absolute;
+ 					content: url(../img/quote-left.svg);
+ 					height: 5.9rem;
+ 					width: 7.1rem;
+ 					top: 5.5rem;
+ 					left: 3.4rem;
+ 				}
+ 				&:after{
+					position: absolute;
+ 					content: url(../img/quote-right.svg);
+ 					height: 5.9rem;
+ 					width: 7.2rem;
+ 					bottom: 7.4rem;
+ 					right: 3.4rem;
+ 				}
+ 			}
+		}
+	}
+	.btn{
+		max-width: 32.6rem;
+		width: 100%;
+		margin: auto;
+		-webkit-box-shadow: 0 0 0.4rem rgba(24, 24, 24, 0.34);
+		        box-shadow: 0 0 0.4rem rgba(24, 24, 24, 0.34);
+		background: #fff;
+		color: #1a75a5;
+		text-shadow: none;
+		&:hover{
+			background: #1a75a5;
+			color: #fff;
+		}
+	}
+}
+
+@media screen and (max-width: 850px){
+.testimonials .slider__item-text{
+    padding: 9rem 3rem 3rem;
+    &:before{
+    	top: 3.5rem;
+    }
+    &:after{
+    	bottom: 1.9rem;
+    }
+}
+}
+
+@media screen and (max-width: 650px){
+.testimonials .slider__item::after{
+ 	bottom: 1rem;
+    -webkit-transform: scale(0.8, 0.8);
+        -ms-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+
+}
+}
+@media screen and (max-width: 500px){
+.testimonials .slider__item-text{
+	&:before{
+		top: 2.5rem;
+		-webkit-transform: scale(0.8, 0.8);
+		    -ms-transform: scale(0.8, 0.8);
+		        transform: scale(0.8, 0.8);
+	}
+	&:after{
+		-webkit-transform: scale(0.8, 0.8);
+		    -ms-transform: scale(0.8, 0.8);
+		        transform: scale(0.8, 0.8);
+	}
+}
+}
+
+
+

@@ -1,0 +1,87 @@
+.main-block{
+	color: #fff;
+	.container{
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+	.main-title{
+		position: relative;
+		z-index: 8;
+		padding-top: 25rem;
+		.title{
+			text-transform: uppercase;
+		}
+		>.font4{
+			padding: 2.5rem 0 4rem 0;
+		}
+	}
+	.chiropractor{
+		position: relative;
+		z-index: 7;
+		left: 10rem;
+		-ms-flex-item-align: end;
+		    align-self: flex-end;
+		img{
+			display: block;
+		}
+	}
+}
+
+@media screen and (max-width: 1055px){
+.main-block{
+	.main-title{
+		// padding-top: 12rem;
+		padding-bottom: 20rem;
+	}
+	.chiropractor{
+		position: absolute;
+		left: auto;
+		right: 0;
+		bottom: 0;
+
+	}
+	.main-title{
+		max-width: 47rem;
+	}
+}
+}
+@media screen and (max-width: 850px){
+.main-block{
+	.main-title{
+		padding-top: 10rem;
+	}
+	.chiropractor{
+		overflow: hidden;
+		img{
+			width: 33.6rem;
+			height: 52rem;
+		}
+	}
+}
+}
+@media screen and (max-width: 670px){
+.main-block{
+	.main-title{
+		max-width: 100%;
+		text-align: center;
+		margin: auto;
+		padding-top: 3rem;
+		padding-bottom: 55rem;
+		>.font4{
+			padding: 1rem 0 2.5rem 0;
+		}
+	}
+	.chiropractor{
+		max-width: 400px;
+		width: 100%;
+		left: 6rem;
+		right: 0;
+		margin: auto;
+	}
+}
+}

@@ -1,0 +1,207 @@
+header{
+	position: relative;
+	z-index: 9;
+	.container{
+		position: relative;
+		z-index: 9;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-top: 2rem;
+	}
+	.menu{
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		&:after{
+			position: absolute;
+			bottom: -3rem;
+			left: -10rem;
+			content: "";
+			width: 1000%;
+			height: 0.1rem;
+			border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+		}
+		a{
+			color: #fff;
+			text-transform: uppercase;
+			font: 1.8rem $font2;
+			padding: 0 1.5rem;
+			&:hover{
+				color: #f2b600;
+			}
+		}
+		li:last-child a{
+			padding-right: 0;
+		}
+	}
+}
+.mobail-menu{
+	display: none;
+}
+
+
+@media screen and (max-width: 1195px){
+header .menu:after{
+	left: 0;
+}
+}
+@media screen and (max-width: 1050px){
+header .menu:after{
+	border: none;
+}
+}
+@media screen and (max-width: 920px){
+header{
+	.menu{
+	display: none;
+}
+.responsive{
+	position: absolute;
+	background: #34b0f0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 100%;
+	right: 0;
+	top: 0;
+	text-align: center;
+	padding-top: 8rem;
+	-webkit-animation: navmenumobile 0.3s ease-out;
+		        animation: navmenumobile 0.3s ease-out;
+
+	a{
+		display: block;
+		padding-bottom: 1.5rem;
+	}
+	li:last-child a{
+		padding-right: 1.5rem;
+	}
+}
+@-webkit-keyframes navmenumobile{
+0%{
+		-webkit-transform:  translate(100%, -100%);
+		        transform:  translate(100%, -100%);
+	}
+	100%{
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+}
+@keyframes navmenumobile{
+	0%{
+		-webkit-transform: translate(100%, -100%);
+		        transform: translate(100%, -100%);
+	}
+	100%{
+		-webkit-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+}
+.mobail-menu {
+	position: absolute;
+	z-index: 999;
+	top: 5.5rem;
+	right: 3rem;
+	display: block;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	-webkit-transition: background 0.1s;
+	-o-transition: background 0.1s;
+	transition: background 0.1s;
+span{
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+	height: 4px;
+	background: #fff;
+	-webkit-transition: background 0s 0.1s;
+	-o-transition: background 0s 0.1s;
+	transition: background 0s 0.1s;
+&:before,
+&:after{
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+	content: "";
+	-webkit-transition-duration: 0.1s, 0.1s;
+	     -o-transition-duration: 0.1s, 0.1s;
+	        transition-duration: 0.1s, 0.1s;
+  	-webkit-transition-delay: 0.1s, 0s;
+  	     -o-transition-delay: 0.1s, 0s;
+  	        transition-delay: 0.1s, 0s;
+}
+&:before{
+	top: -12px;
+	-webkit-transition-property: top, -webkit-transform;
+	transition-property: top, -webkit-transform;
+	-o-transition-property: top, transform;
+	transition-property: top, transform;
+	transition-property: top, transform, -webkit-transform;
+}
+&:after {
+  bottom: -12px;
+   -webkit-transition-property: bottom, -webkit-transform;
+   transition-property: bottom, -webkit-transform;
+   -o-transition-property: bottom, transform;
+   transition-property: bottom, transform;
+   transition-property: bottom, transform, -webkit-transform;
+}
+}
+}
+
+.mobail-menu.is-active{
+	span{
+	 background: none;
+		&::before{
+			top: 0;
+			-webkit-transform: rotate(45deg);
+			    -ms-transform: rotate(45deg);
+			        transform: rotate(45deg);
+		 }
+		&::after{
+			bottom: 0;
+			-webkit-transform: rotate(-45deg);
+			    -ms-transform: rotate(-45deg);
+			        transform: rotate(-45deg);
+		}
+		&::before,
+		&::after{
+			-webkit-transition-delay: 0s, 0.3s;
+	        -o-transition-delay: 0s, 0.3s;
+	          transition-delay: 0s, 0.3s;
+		}
+
+ 
+	}
+} 
+}
+}
+
+@media screen and (max-width: 500px){
+header{
+	.logo img{
+		width: 20rem;
+		height: auto;
+	}
+	.mobail-menu{
+		top: 4rem;
+	}
+}
+}
